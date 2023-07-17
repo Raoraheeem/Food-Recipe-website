@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Poppins&family=Unbounded:wght@900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+<script src="food.js"></script>
+    <title>Food</title>
+</head>  
+<style>
+
+   
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg z-1 position-relative p-5 rounded-3  " style="margin-bottom: 0; background-color: rgba(255,252,247,255); position: relative;">
+        <div  class="container-fluid  " style="margin-bottom: 0; background-color:rgba(255,252,247,255); position: absolute; right: 0; top: 25%;">
+          <img src="img/Bitesicon.png" class="img-fluid" alt="" id="bitesicon">
+          <a class="navbar-brand ms-3" href="#">Bites</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse  " id="navbarSupportedContent" style=" position: relative;">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-evenly"style="position: absolute; right: 1%; top:0% margin-right:15% ; margin-top:2% ; font-weight: bold;">
+              <li class="nav-item">
+               <a href="login.html"> <button type="button" class="btn btn-warning me-3" style="color:rgb(8, 8, 8); font-family: 'Poppins', sans-serif;">Login</button></a>
+              </li>
+              <li class="nav-item Aboutus " style="background-color: rgb(255, 213, 28);">
+                <a class="nav-link active  " href="#">About us</a>
+              </li>
+              <li class="nav-item"  style="background-color: rgb(255, 213, 28);">
+                <a class="nav-link " href="#">Blog</a>
+              </li>
+              <li class="nav-item"  style="background-color: rgb(255, 213, 28);">
+                <a class="nav-link " href="#">Contact</a>
+              </li>
+              <li class="nav-item"  style="background-color: rgb(255, 213, 28);">
+                <a class="nav-link " href="#">Reserve Table</a>
+              </li>
+              <li class="nav-item dropdown" style="background-color: rgb(255, 213, 28);">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu
+                </a>
+                <ul class="dropdown-menu" style="background-color: rgb(255, 213, 28);">
+                  <li><a class="dropdown-item" href="#">Pizza</a></li>
+                  <li><a class="dropdown-item" href="#">Burger</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">French Fries</a></li>
+                  <li><a class="dropdown-item" href="#">Sandwich</a></li>
+                  <li><a class="dropdown-item" href="#">Icecream</a></li>
+                </ul>
+              </li>
+            
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+
+      <div class="container-fluid text-center " style="margin-top: 0; background-color: rgba(255,252,247,255);">
+        <div class="row">
+          <div class="col ">
+            
+            <h1 class="text-sm-center" style="margin-top: 15%; margin-bottom: 5%; margin-left:15% ;font-family: 'Righteous', cursive; font-weight: bolder;" class="" >We Serve The Test <br>
+              You Love </h1>
+           
+            
+            <p class="text-sm-center" style="margin-top: 5%; margin-left:15% ;  font-family: 'Poppins', sans-serif; font-weight: normal; color: rgba(83, 83, 83, 0.942);" >This is a type of resturant which typically serves food and drinks,in 
+            addition to light refreshment such as backed good or snacks.The term comes from the rench word meaning food.</p>
+            <button type="button" class="btn btn-warning rounded-pill text-center" style="margin-top:5% ;
+            margin-bottom: 10%;
+            height: 50px; width: 140px; border: 2px solid rgb(210, 210, 210);
+            color: black; font-family: 'Poppins', sans-serif; font-weight: bold">Explore Food</button>
+            <button type="button" class="btn btn-outline-warning rounded-pill text-center"  style="margin-top:5% ; margin-left: 5%; margin-bottom: 10%; height: 50px; width: 140px; color: black; font-family: 'Poppins', sans-serif; font-weight: bolder;"><i class="bi bi-search" style="margin-right: 15%; font-weight: bolder;
+            
+             "></i>Search</button>
+            
+          </div>
+          
+          <div class="col-sm-4 mb-3 mb-sm-0  d-flex justify-content-evenly z-n position-relative p-5 rounded-3 ">
+            <div id="carouselExampleIndicators" class="carousel slide "data-bs-ride="carousel">
+             
+              <div class="carousel-inner">
+                <div class="carousel-item active"  data-bs-interval="1000" >
+                  <img src="img/plate.png" class="img-fluid d-block w-100" alt="..." width="300px" height="300px" style="margin-top: 15%;">
+
+                </div>
+                <div class="carousel-item "  data-bs-interval="2000" >
+                  <img src="img/Pastaslider.png" class=" img-fluid d-block w-100" alt="..." width="300px" height="300px" style="margin-top: 15%;">
+              
+                </div>
+                <div class="carousel-item " >
+                  <img src="img/Sandwichslider.png" class=" img-fluid d-block w-100" width="300px" height="300px"alt="..." style="margin-top: 15%;">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" style="background-color: yellow" id="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next"
+              style="background-color: yellow;" id="next">
+                <span class="carousel-control-next-icon" aria-hidden="true" style="color: black;"></span>
+                <span class="visually-hidden" style="background-color: yellow;">Next</span>
+              </button>
+            </div>
+          </div>
+      
+        </div>
+    </div>
+      <h1 style="margin-top: 5%; margin-bottom: 5%; margin-left: 7%;">Popular dishes <span class="badge bg-secondary mt-10"></span></h1>
+
+      
+      <div class="container text-center" style=" background-color: rgba(255,252,247,255);">
+        <div class="row">
+          <div class="col-sm-4  mb-sm-0 d-flex justify-content-evenly " style="background-color: rgba(255,252,247,255);">
+            <div class="" style="width: 18rem; background-color: rgb(255, 255, 255); border-radius: 6%;"  onmouseover="myFunction()" onmouseout="myFunction2()" id="pizzaplate2">
+                <img src="img/pizzaplate2.png" class="card-img-top img-fluid" alt="..." width="100px" height="100px">
+                <div class="card-body">
+                  <h5 class="card-title" style="margin-top: 5%; margin-bottom: 5%;">Pizza</h5>
+                  
+                  <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                  <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                  <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                  <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                  <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 15%;"></i>
+                
+                  <p class="card-text-center" style="margin-top: 5%;">Pizza is a type of food typically made <br> from an Unleavened dough.</p>
+                  <p class="text-start d-flex justify-content-evenly" style="font-weight: bold;">$ 35.00</p>
+                  <a href="#" class="btn btn-outline-warning rounded-pill text-center d-flex justify-content-evenly" style="color: black; font-weight: bold; ">Add to cart</a>
+                </div>
+              </div>
+          </div>
+          <div class="col-sm-4  mb-sm-0  d-flex justify-content-evenly" style="background-color: rgb(255, 252, 247,255);">
+            <div class=""  style="width: 18rem; background-color: rgb(255, 255, 255); border-radius: 6%;"onmouseover="myFunction3()" onmouseout="myFunction4()" id="burgerplate2">
+                <img src="img/Burger with fries.png" class="card-img-top img-fluid" alt="..." id="Burgerplate">
+                <div class="card-body">
+                  <h5 class="card-title" class="card-title" style="margin-top: 5%; margin-bottom: 5%;">Burger with fries</h5>
+                    <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                  <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                  <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                  <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                  <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 15%;"></i>
+                  <p class="card-text-center"style="margin-top: 2%;">A typical double cheeseburger and large fries provides about 1,200 calories and up to 1,700</p>
+                  <p class="text-start d-flex justify-content-evenly" style="font-weight: bold;">$ 55.00</p>
+
+                  <a href="#" class="btn btn-outline-warning rounded-pill text-center d-flex justify-content-evenly" style="color: black; font-weight: bold; ">Add to Cart</a>
+                </div>
+              </div>
+          </div>
+          <div class="col-sm-4  mb-sm-0 d-flex justify-content-evenly"style="background-color: rgb(255, 252, 247,255);">
+            <div class="" style="width: 18rem; background-color: rgb(255, 255, 255);border-radius: 6%;"onmouseover="myFunction5()" onmouseout="myFunction6()" id="Fishplate2">
+                <img src="img/Fish curry.png" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"  style="margin-top: 5%; margin-bottom: 5%;">Fish Curry</h5>
+                  <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                  <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                  <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                  <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                  <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 15%;"></i>
+                  <p class="card-text-center" style="margin-top: 2%;">Mix cornstarch, tapioca starch, or arrowroot with cold water or a cup of liquid from the curry. </p>
+                  <p class="text-start d-flex justify-content-evenly" style="font-weight: bold;">$ 35.00</p>
+
+                  <a href="#" class="btn btn-outline-warning rounded-pill text-center d-flex justify-content-evenly" style="color: black; font-weight: bold;">Add to Cart</a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="container " style="margin-top: 6%; position: relative;">
+        <div class="container text-center " style="background-color: rgb(255, 252, 247,255);">
+            <div class="row d-flex justify-content-evenly">
+              <div class="col-6    "width="1300px" height="1300px">
+           <img src="img/chef.png" alt="" width="300px" height="300px" class="img-fluid ">
+              </div>
+              <div class="col-6  " >
+                <div class="row d-flex justify-content-evenly">
+                <h1  class=" text-center " style="margin-top: 10%; margin-right:0% ; margin-left: 30%;" >We Are more than <br> Multiple Service <span class="badge bg-secondary "></span></h1>
+            
+              </div>
+<div class="row-6 d-flex justify-content-evenly">
+                <p class="text-center " style="margin-left:20% ; margin-top: 5%;
+                margin-bottom: 5%; color: rgb(138, 138, 138);">This is a type of resturant which service food and drinks in addition to light refreshment such as baked goods or snacks.
+              </p>
+            </div>
+            <div class="row-6 d-flex justify-content-evenly">
+                <button type="button" class="btn btn-outline-warning rounded-pill
+               " style="margin-top: 10%; margin-right: 0%; margin-left: 15%; margin-bottom: 5%; color: black; font-weight: bold;">About Us</button>
+              </div>
+
+              </div>
+           
+
+             
+            </div>
+          </div>
+
+      </div>
+      <div class="container text-center" >
+        <div class="row " style="margin-top:5% ; margin-bottom: 0%;">
+            <h1 >Our Regular Menu Pack </h1>
+ 
+            <div class="col" style="margin-top: 5%;">
+                <button type="button" class="btn btn-outline-warning rounded-pill  text-center" style="font-weight: bold; color: black;">Special Foods</button>
+               
+              </div>
+              <div class="col"style="margin-top: 5%;">
+                <button type="button" class="btn btn-outline-warning rounded-pill text-center" style="font-weight: bold; color: black;">Maxican</button>
+              
+              </div>
+              <div class="col" style="margin-top: 5%;">
+                <button type="button" class="btn btn-outline-warning rounded-pill text-black"style="font-weight: bold; color: black;" >Italian</button>
+               
+              </div>
+              <div class="col" style="margin-top: 5%;">
+                <button type="button" class="btn btn-outline-warning rounded-pill text-black"style="font-weight: bold; color: black;">Japanese</button>
+               
+              </div>
+              <div class="col" style="margin-top: 5%;">
+                <button type="button" class="btn btn-outline-warning rounded-pill text-black"style="font-weight: bold; color: black;">Drinks</button>
+               
+              </div>
+              <div class="col" style="margin-top: 5%;">
+                <button type="button" class="btn btn-outline-warning rounded-pill text-black"style="font-weight: bold; color: black;">Lunch</button>
+               
+              </div>
+              <div class="col"style="margin-top: 5%;">
+                <button type="button" class="btn btn-outline-warning rounded-pill text-black"style="font-weight: bold; color: black;">More item+</button>
+               
+              </div>
+          
+          </div>
+          </div>
+          <div class="container text-center" style="margin-top:5%; background-color: rgb(255, 252, 247,255);">
+            <div class="row" >
+              <div class="col-sm-3  mb-sm-0   d-flex justify-content-evenly" >
+                <div class="" style="width: 18rem;">
+                    <img src="img/chicken shuwarma.png" class="card-img-top img-fluid" alt="..." id="shuwarma">
+                    <div class="card-body">
+                      <h5 class="card-title"   style="margin-top: 5%; margin-bottom: 5%;">Chicken shuwarma</h5>
+                      <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                      <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                      <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                      <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                      <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 15%;"></i>
+                      <p class="card-text-center" style="margin-top: 2%;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <p class="text-start d-flex justify-content-evenly" style="font-weight: bold;">$ 35.00</p>
+                      <a href="#"  class="btn btn-outline-warning rounded-pill text-center d-flex justify-content-evenly" style="color: black; font-weight: bold;">Add to cart</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-sm-3  mb-sm-0  d-flex justify-content-evenly">
+                <div class="" style="width: 18rem;">
+                    <img src="img/chococone.png" class="card-img-top img-fluid" alt="..." id="chococone">
+                    <div class="card-body">
+                      <h5 class="card-title" style="margin-top: 5%; margin-bottom: 5%;">Choco Cone</h5>
+                      <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                      <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                      <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                      <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                      <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 15%;"></i>
+                      <p class="card-text-center" style="margin-top: 2%;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <p class="text-start d-flex justify-content-evenly" style="font-weight: bold;">$ 35.00</p>
+                      <a href="#" class="btn btn-outline-warning rounded-pill text-center d-flex justify-content-evenly" style="color: black; font-weight: bold;">Add to cart</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-sm-3  mb-sm-0 d-flex justify-content-evenly ">
+                <div class="" style="width: 18rem;">
+                  <img src="img/McFlurry.png" class="card-img-top img-fluid" alt="..." id="McFlurry">
+                  <div class="card-body">
+                    <h5 class="card-title" style="margin-top: 5%; margin-bottom: 5%;">McFlurry</h5>
+                    <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                    <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                    <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                    <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                    <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 15%;"></i>
+                    <p class="card-text-center" style="margin-top: 2%;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="text-start d-flex justify-content-evenly" style="font-weight: bold;">$ 35.00</p>
+                    <a href="#" class="btn btn-outline-warning rounded-pill text-center d-flex justify-content-evenly" style="color: black; font-weight: bold;">Add to cart</a>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="col-sm-3  mb-sm-0 d-flex justify-content-evenly">
+                <div class="" style="width: 18rem;">
+                    <img src="img/sapeghatti.png" class="card-img-top img-fluid" alt="..." id="sapeghatti">
+                    <div class="card-body">
+                      <h5 class="card-title" style="margin-top: 5%; margin-bottom: 5%;">Sapeghatti</h5>
+                      <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                      <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                      <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                      <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                      <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 15%;"></i>
+                      <p class="card-text-center"  style="margin-top: 2%;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <p class="text-start d-flex justify-content-evenly" style="font-weight: bold;">$ 35.00</p>
+                      <a href="#"class="btn btn-outline-warning rounded-pill text-center d-flex justify-content-evenly" style="color: black; font-weight: bold;">Add to cart</a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        
+              <div class="container text-center " style="margin-top:5%;
+              background-color: rgb(255, 252, 247,255);">
+                <div class="row" >
+                  <div class="col-sm-3  mb-sm-0 d-flex justify-content-evenly">
+                    <div class="" style="width: 18rem;">
+                        <img src="img/hot dogs.png" class="card-img-top img-fluid" alt="..." id="sapeghatti">
+                        <div class="card-body">
+                          <h5 class="card-title" style="margin-top: 5%; margin-bottom: 5%;">Hot dogs</h5>
+                          <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                          <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                          <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                          <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                          <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 15%;"></i>
+                          <p class="card-text-center"  style="margin-top: 2%;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <p class="text-start d-flex justify-content-evenly" style="font-weight: bold;">$ 35.00</p>
+                          <a href="#"class="btn btn-outline-warning rounded-pill text-center d-flex justify-content-evenly" style="color: black; font-weight: bold;">Add to cart</a>
+                        </div>
+                      </div>
+                  </div>
+                
+               
+                  <div class="col-sm-3  mb-sm-0 d-flex justify-content-evenly ">
+                    <div class="" style="width: 18rem;">
+                      <img src="img/Pastaslider.png" class="card-img-top img-fluid" alt="..." id="sapeghatti">
+                      <div class="card-body">
+                        <h5 class="card-title" style="margin-top: 5%; margin-bottom: 5%;">Pasta</h5>
+                        <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                        <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                        <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                        <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                        <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 15%;"></i>
+                        <p class="card-text-center"  style="margin-top: 2%;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="text-start d-flex justify-content-evenly" style="font-weight: bold;">$ 35.00</p>
+                        <a href="#"class="btn btn-outline-warning rounded-pill text-center d-flex justify-content-evenly" style="color: black; font-weight: bold;">Add to cart</a>
+                      </div>
+                    </div>
+                      </div>
+                
+                  <div class="col-sm-3  mb-sm-0 d-flex justify-content-evenly">
+                    <div class="" style="width: 18rem;">
+                      <img src="img/Sandwichslider.png" class="card-img-top img-fluid" alt="..." id="sapeghatti">
+                      <div class="card-body">
+                        <h5 class="card-title" style="margin-top: 5%; margin-bottom: 5%;">Sandwich</h5>
+                        <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                        <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                        <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                        <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                        <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 15%;"></i>
+                        <p class="card-text-center"  style="margin-top: 2%;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="text-start d-flex justify-content-evenly" style="font-weight: bold;">$ 35.00</p>
+                        <a href="#"class="btn btn-outline-warning rounded-pill text-center d-flex justify-content-evenly" style="color: black; font-weight: bold;">Add to cart</a>
+                      </div>
+                    </div>
+                    
+                 
+                  </div>
+                  <div class="col-sm-3  mb-sm-0 d-flex justify-content-evenly">
+                    <div class="" style="width: 18rem;">
+                      <img src="img/plate.png" class="card-img-top img-fluid" alt="..." id="sapeghatti">
+                      <div class="card-body">
+                        <h5 class="card-title" style="margin-top: 5%; margin-bottom: 5%;">Salad</h5>
+                        <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                        <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                        <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                        <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 5%;"></i>
+                        <i class="bi bi-star-fill" style="color: orange; margin-top: 5%;margin-bottom: 15%;"></i>
+                        <p class="card-text-center"  style="margin-top: 2%;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="text-start d-flex justify-content-evenly" style="font-weight: bold;">$ 35.00</p>
+                        <a href="#"class="btn btn-outline-warning rounded-pill text-center d-flex justify-content-evenly" style="color: black; font-weight: bold;">Add to cart</a>
+                      </div>
+                    </div>
+                    
+                 
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid text-center " style="margin-top:5% ; position: relative; background-color: rgb(255, 252, 247,255);">
+               <div class="col-6 ">
+                <div class="row">
+                    <h1 class="text-center" style="margin-top: 10%;">Do you have Any Dinner <br>Plan today <br>Reserve Your table <span class="badge bg-secondary"></span></h1>
+
+                </div>
+                <div class="row d-flex align-items-end">
+                    <p class="text-start text-center btn-outline-warning " style="margin-top: 5%;">
+                      Make online Reservations read resturant reviews from dinner, and earn <br> points toward free meals.
+                    </p>
+
+                </div>
+                <div class="row-6  ">
+                  <button type="button" class="btn btn-outline-warning rounded-pill text-center" style="color: black; font-weight: bolder; margin-bottom: 5%;">Make Reservations</button>
+
+                </div>
+
+               </div>
+               <div class="col-6 position-absolute top-0 end-0" >
+              
+                    <img src="img/pizza3.png" alt="" class="img-fluid" width="300px" height="200px" style="margin-top: 5%; margin-bottom: 55%;">
+
+                
+
+               </div>
+              </div>
+              <div class="container-fluid text-start" style="margin-top:5% ; margin-left: 5%; ">
+                <h1> What Our Customer Says? <span class="badge bg-secondary"></span></h1>
+              </div>
+
+
+              <div class="container-fluid text-center " style="margin-top: 5%; margin-left: 0%;" >
+
+                <div class="row  " style="margin-top: 5%;">
+                  <div class="col-sm-4  mb-sm-0 d-flex justify-content-evenly " style="background-color: rgb(255, 252, 247,255) ; border-radius: 20px; position: relative; margin-right: 1%;  ">
+                   <div class="" style="width: 18rem;">
+                 <p style="font-weight: bold; margin-left: 15%; margin-top: 5%; " class="text-start">"This Place is great Atmosphere is chill and cool but the staff is really Friendly.They Know what they are doing and what they are talking about, and you can tell making the customers happy is their main priority."</p>
+                    <img src="img/Profile1.png" class="card-img-top img-fluid" alt="..." id="profile1">
+                    <div class="card-body">
+                      <h5 class="card-title" style="margin-left: 35%; margin-bottom: 3%; font-weight: bold;">Savvannah Nguyen</h5>
+                    
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-sm-4  mb-sm-0 d-flex justify-content-evenly" style="background-color: rgb(255, 252, 247,255) ; border-radius: 20px; position: relative; margin-right: 1%;  ">
+                    <div class="" style="width: 18rem;">
+                  <p style="font-weight: bold; margin-left: 15%; margin-top: 5%; " class="text-start">"This Place is great Atmosphere is chill and cool but the staff is really Friendly.They Know what they are doing and what they are talking about, and you can tell making the customers happy is their main priority."</p>
+                     <img src="img/Profile1.png" class="card-img-top img-fluid" alt="..." id="profile1">
+                     <div class="card-body">
+                       <h5 class="card-title" style="margin-left: 30%; margin-bottom: 3%; font-weight: bold;">Savvannah Nguyen</h5>
+                     
+                     </div>
+                   </div>
+                   </div>
+                   <div class="col-sm-4  mb-sm-0 d-flex justify-content-evenly" style="background-color: rgb(255, 252, 247,255) ; border-radius: 20px; position: relative; margin-right: 1%;  ">
+                    <div class="" style="width: 18rem;">
+                  <p style="font-weight: bold; margin-left: 15%; margin-top: 5%; " class="text-start">"This Place is great Atmosphere is chill and cool but the staff is really Friendly.They Know what they are doing and what they are talking about, and you can tell making the customers happy is their main priority."</p>
+                     <img src="img/Profile1.png" class="card-img-top img-fluid" alt="..." id="profile1">
+                     <div class="card-body">
+                       <h5 class="card-title" style="margin-left: 35%; margin-bottom: 3%; font-weight: bold;">Savvannah Nguyen</h5>
+                     
+                     </div>
+                   </div>
+                   </div>
+                   <div class="col-sm-4  mb-sm-0 d-flex justify-content-evenly" style="background-color: rgb(255, 252, 247,255) ; border-radius: 20px; position: relative; margin-right: 1%;  ">
+                    <div class="" style="width: 18rem;">
+                  <p style="font-weight: bold; margin-left: 15%; margin-top: 5%; " class="text-start">"This Place is great Atmosphere is chill and cool but the staff is really Friendly.They Know what they are doing and what they are talking about, and you can tell making the customers happy is their main priority."</p>
+                     <img src="img/Profile1.png" class="card-img-top img-fluid" alt="..." id="profile1">
+                     <div class="card-body">
+                       <h5 class="card-title" style="margin-left: 35%; margin-bottom: 3%; font-weight: bold;">Savvannah Nguyen</h5>
+                     
+                     </div>
+                   </div>
+                   </div>
+               
+                </div>
+              </div>
+
+
+ <div class="container-fluid text-start" style="margin-top:5% ; margin-left: 8%;">
+                <h1>Meet Our Chefs <span class="badge bg-secondary"></span></h1>
+              </div>
+
+              <div class="container text-center d-flex justify-content-evenly " style="margin-top:5% ; background-color: rgb(255, 252, 247,255) ;">
+                <div class="row " style="background-color: rgb(255, 252, 247,255) ;">
+                  <div class="col-sm-3  mb-sm-0 bg-light-subtle " style="background-color: rgb(255, 252, 247,255) ;">
+                 <img src="img/Eshter.png" alt=""class="img-fluid">
+                 <h3 style="margin-top: 10%;">Savannah Nguyen <span class="badge bg-secondary"></span></h3>
+                  </div>
+                  <div class="col-sm-3  mb-sm-0 bg-light-subtle">
+                  <img src="img/savannah.png" alt="" class="img-fluid">
+                  <h3 style="margin-top: 10%;">Esther Howard  <span class="badge bg-secondary"></span></h3>
+                  </div>
+                  <div class="col-sm-3  mb-sm-0 bg-light-subtle">
+                <img src="img/Marvin.png" alt=""class="img-fluid">
+                <h3 style="margin-top: 10%;">Marvin mckinney <span class="badge bg-secondary"></span></h3>
+                  </div>
+                  <div class="col-sm-3  mb-sm-0 bg-light-subtle">
+                    <img src="img/Albert.png" alt="" class="img-fluid">
+                    <h3 style="margin-top: 10%;">Albert Flores <span class="badge bg-secondary"></span></h3>
+                  
+                  </div>
+                </div>
+            </div>
+
+            <div class="container-fluid text-center" style="margin-top:5% ; position: relative; background-color: rgb(255, 252, 247,255) ;">
+               <div class="col-6">
+                <div class="row">
+                    <h1 class="text-center" style="margin-top: 5%;">Never Feel Hungry! <br>
+                      Download Our mobile App <br>Enjoy Delicious Foods<span class="badge bg-secondary"></span></h1>
+
+                </div>
+                <div class="row">
+                    <p class="text-center" style="margin-top: 5%;">
+                    Make online reservations, read resturant reviws from diners, and earn <br>points towards free meals.</p>
+                    
+                </div>
+                <div class="row-6 sm-6   mb-sm-0 d-flex justify-content-evenly " style="margin-top: 5%; position: relative;">
+
+                    <button type="button" class="btn btn-warning rounded-pill btn-sm   " id="applebtn" style="position: relative;"><i class="bi bi-apple sm-6   mb-sm-0 " id="appleicon" style=" position: absolute; left:1%;"   ></i> <p style="margin-top: 0; font-weight: normal; font-size: 15px; margin-left: 5%;" class="text-sm-center">Download on the</p> 
+                    <p style="font-weight: bold; margin: 5%; font-size: 15px;position: absolute; top:35%; left: 30%;" class="text-sm-start">Apple Store</p></button>
+                  </div>
+                  <div class="row-6 sm-6   mb-sm-0 d-flex justify-content-evenly " style="margin-top: 5%; position: relative;">
+                    <button type="button" class="btn btn-outline-warning rounded-pill" style="color: black; font-weight: bolder;"> <img src="Google play.png" alt="" id="googleicon"> Google Play</button>
+                  </div>
+
+               </div>
+
+
+               <div class="col-6 position-absolute top-0 end-0  container-fluid"  >
+                <img src="img/mobilefood.png" alt="" width="204px" height="415px" class="img-fluid ">
+                <img src="img/Sauceplate.png" alt="" width="106px" height="57px" class="img-fluid">
+
+               </div>
+            </div>
+            <h3 style="margin-top: 5%; margin-left: 10%;" class="text-start"> Bites<span class="badge bg-secondary"></span></h3>
+            <br>
+            <hr style="margin-left: 5%; margin-right: 5%;">
+
+
+            <div class="container text-center  " style="background-color: rgb(255, 252, 247,255) ;">
+                
+                <div class="row ">
+                  <div class="col-3 d-flex justify-content-evenly ">
+                    <h4>Subscribe Our Newsletter <span class="badge bg-secondary"></span></h4>
+                  </div>
+                  <div class="col-3 d-flex justify-content-evenly">
+                    <h4>Service <span class="badge bg-secondary"></span></h4>
+                  </div>
+                  <div class="col-3 d-flex justify-content-evenly">
+                    <h4>Quicklinks <span class="badge bg-secondary"></span></h4>
+                  </div>
+                  <div class="col-3 d-flex justify-content-evenly">
+                    <h4>About <span class="badge bg-secondary"></span></h4>
+                  </div>
+                 
+                </div>
+                <div class="row ">
+                    <div class="col-3 d-flex justify-content-evenly ">
+                  
+                    </div>
+                    <div class="col-3 d-flex justify-content-evenly ">
+                   online order
+                    </div>
+                    <div class="col-3 d-flex justify-content-evenly ">
+                      Menu
+                    </div>
+                    <div class="col-3 d-flex justify-content-evenly ">
+                        Our Story
+                      </div>
+                  </div>
+                  <div class="row ">
+                    <div class="col-3 d-flex justify-content-evenly ">
+                        <input type="email" class="form-control border border-top-0 border-end-0 border-start-0  border-dark-subtle" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your Email Address" style="margin-bottom: 5%;">
+                    </div>
+                    <div class="col-3 d-flex justify-content-evenly ">
+                  Pre-reservation
+                    </div>
+                    <div class="col-3 d-flex justify-content-evenly ">
+                      Reviews
+                    </div>
+                    <div class="col-3 d-flex justify-content-evenly ">
+                        Benifits
+                      </div>
+                  </div>
+                  <div class="row ">
+                    <div class="col-3 d-flex justify-content-evenly ">
+                
+                    </div>
+                    <div class="col-3 d-flex justify-content-evenly ">
+                        <p>24/7 Services</p>
+                    </div>
+                    <div class="col-3 d-flex justify-content-evenly ">
+                        <p>Blogs</p>
+                    </div>
+                    <div class="col-3 d-flex justify-content-evenly ">
+                        <p>Career</p>
+                      </div>
+                  </div>
+                  <div class="row ">
+                    <div class="col-2 d-flex justify-content-evenly  d-flex justify-content-evenly">
+              <img src="img/Facebookicon.png" alt="" class="img-fluid">
+              <img src="img/twittericon.png" alt="" class="img-fluid">
+              <img src="img/Instagram.png" alt="" class="img-fluid">
+              <img src="img/Youtubeicon.png" alt="" class="img-fluid">
+                    </div>
+                   
+              </div>
+
+              
+
+
+
+    
+</body>   
+</html>
+<style>
+ #Burgerplate{
+  width: 200px;
+  height: 150px;
+  margin-left: 15%;
+ }
+ #shuwarma{
+  width: 200px;
+  height: 150px;
+  margin:10%;
+ }
+    #chococone{
+      width: 200px;
+  height: 150px;
+  margin:10%;
+    }
+    #McFlurry{
+      width: 200px;
+  height: 150px;
+  margin:10%;
+
+    }
+    #sapeghatti{
+      width: 200px;
+  height: 150px;
+  margin:10%;
+
+    }
+    #applebtn{
+      height: 70px;
+      width: 270px;
+      border: 2px solid white;
+    }
+    #appleicon{
+ margin-left: 5%;
+      font-size: 20px;
+    
+    }
+    #googleicon{
+      width: 25px;
+      height: 25px;
+    }
+    #profile1{
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      bottom: 2%;
+      left: 16%;
+    }
+    #bitesicon{
+      width: 40px;
+      height: 30px;
+    }
+    .Aboutus:hover{
+      background-color: yellow;
+  
+    }
+   #next{
+    width:50px;
+    height:50px;
+    margin-top: 50%;
+   }
+   #prev{
+    width:50px;
+    height:50px;
+    margin-top: 50%;
+   }
+</style>
+<script>function myFunction() {
+  document.getElementById("pizzaplate2").style.boxShadow = "0px 0px 15px yellow";
+
+}
+function myFunction2() {
+  document.getElementById("pizzaplate2").style.boxShadow = "0px 0px 0px ";
+
+  
+}
+function myFunction3() {
+
+  document.getElementById("burgerplate2").style.boxShadow = "0px 0px 15px yellow";
+  
+}
+function myFunction4() {
+
+  document.getElementById("burgerplate2").style.boxShadow = "0px 0px 0px ";
+  
+}
+
+function myFunction5() {
+  document.getElementById("Fishplate2").style.boxShadow = "0px 0px 15px yellow";
+
+
+}
+function myFunction6() {
+  document.getElementById("Fishplate2").style.boxShadow = "0px 0px 0px ";
+
+
+}
+</script>
